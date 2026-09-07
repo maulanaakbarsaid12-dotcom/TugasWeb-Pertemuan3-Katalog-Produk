@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MASH — Comfort Kitchen &amp; Coffee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-row">
+    <a href="#beranda" class="logo">
+      <span class="logo-mark">
+        <img src="Gambar Logo.png" alt="Logo MASH Cafe" onerror="this.replaceWith(Object.assign(document.createElement('span'),{innerHTML:'MA<span>S</span>H'}))">
+      </span>
+      <span class="logo-sub">COMFORT KITCHEN &amp; COFFEE</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#beranda">Beranda</a>
+      <a href="#menu">Menu</a>
+      <a href="#promo">Promo</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cart-btn" id="cartOpenBtn" aria-label="Buka keranjang">
+        Keranjang <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggleBtn" aria-label="Buka navigasi">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="beranda">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow-line"><span class="dash"></span><span>DAPUR RUMAHAN, RASA DIHANCURKAN SEMPURNA</span></div>
+      <h1>PESAN <em>MASH</em><br>COFFEE</h1>
+      <p class="lede">Mash bowl hangat, kopi racikan sendiri, dan roti panggang setiap pagi. Pilih menu, checkout dari HP, tinggal duduk dan tunggu nomor dipanggil.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn-primary">Lihat Menu</a>
+        <a href="#tentang" class="btn-ghost">Jam &amp; Lokasi</a>
+      </div>
+    </div>
+    <div class="hero-facts">
+      <div class="fact"><div class="num">07.00–22.00</div><div class="lbl">Buka setiap hari, jam operasional</div></div>
+      <div class="fact"><div class="num">100%</div><div class="lbl">Diracik saat pesanan masuk</div></div>
+      <div class="fact"><div class="num">3 KM</div><div class="lbl">Radius gratis antar di sekitar cafe</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Menu Hari Ini</h2>
+      <p>Semua bowl dan minuman dibuat begitu pesanan masuk ke dapur — bukan dari stok yang dipanaskan ulang.</p>
+    </div>
+    <div class="cat-tabs" id="catTabs"></div>
+    <div class="menu-list" id="menuList"></div>
+  </div>
+</section>
+
+<section class="section" id="promo">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Promo Berjalan</h2>
+      <p>Berlaku untuk pemesanan langsung di platform ini.</p>
+    </div>
+    <div class="promo-list">
+      <div class="promo-item">
+        <div class="idx">PAGI HEMAT</div>
+        <h3>Kopi + Toast, potong Rp5.000</h3>
+        <p>Berlaku 07.00–10.30 untuk kombinasi kopi susu apa saja dengan salah satu menu toast.</p>
+      </div>
+      <div class="promo-item">
+        <div class="idx">BUNDLING BOWL</div>
+        <h3>2 Mash Bowl, gratis Es Teh Serai</h3>
+        <p>Pesan dua mash bowl varian bebas dalam satu transaksi, dapat tambahan minuman.</p>
+      </div>
+      <div class="promo-item">
+        <div class="idx">MEMBER MASH</div>
+        <h3>Transaksi ke-6 gratis kopi</h3>
+        <p>Cukup pakai nomor WhatsApp yang sama tiap checkout, kami catat otomatis di kasir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tentang">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <h2 style="font-size:clamp(28px,4vw,40px);color:var(--cream);margin-bottom:18px;">Dari dapur kecil,<br>untuk meja penuh cerita.</h2>
+      <p>MASH mulai dari ide sederhana: kentang tumbuk hangat dengan topping yang biasanya cuma ada di menu rumahan, disandingkan kopi yang diseduh pelan-pelan.</p>
+      <p>Semua bahan disiapkan pagi hari, dan dapur berhenti menerima pesanan berat 30 menit sebelum tutup supaya kualitas tetap terjaga sampai transaksi terakhir.</p>
+      <div class="hours-box">
+        <div class="hours-row"><span>Senin – Minggu</span><span>07.00 – 22.00</span></div>
+        <div class="hours-row"><span>Dapur tutup pesanan</span><span>30 menit sebelum jam tutup</span></div>
+      </div>
+    </div>
+    <div class="about-visual">
+      <img src="Gambar Toko.png" alt="Suasana dapur dan meja MASH Cafe" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'center-mark',textContent:'MASH'}))">
+    </div>
+  </div>
+</section>
+
+<footer id="kontak">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>MASH CAFE</h4>
+        <p>Jl. Mustofa no.123<br>Medan Timur, Sumatera Utara</p>
+        <p>Buka 07.00 – 22.00 setiap hari</p>
+      </div>
+      <div>
+        <h4>KONTAK</h4>
+        <a href="tel:+6281234567890">+62 822-7499-9653</a>
+        <a href="mailto:halo@mashcafe.id">halo@mashcafe.id</a>
+        <a href="#" onclick="return false;">@mashcafe.id</a>
+      </div>
+      <div>
+        <h4>TAUTAN</h4>
+        <a href="#menu">Menu</a>
+        <a href="#promo">Promo</a>
+        <a href="#tentang">Jam &amp; Lokasi</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MASH Comfort Kitchen &amp; Coffee.</span>
+      <span>Pesan online, ambil hangat di meja.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cart-bar" id="stickyBar">
+  <div class="info">Total belanja<span class="total" id="stickyTotal">Rp0</span></div>
+  <button id="stickyOpenBtn">Lihat Keranjang</button>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="drawer" id="cartDrawer" aria-label="Keranjang belanja">
+  <div class="drawer-head">
+    <h3>Keranjang</h3>
+    <button class="drawer-close" id="drawerCloseBtn" aria-label="Tutup keranjang">×</button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot" id="drawerFoot">
+    <div class="sum-row"><span>Subtotal</span><span id="sumSubtotal">Rp0</span></div>
+    <div class="sum-row"><span>Pajak &amp; layanan (5%)</span><span id="sumTax">Rp0</span></div>
+    <div class="sum-row total"><span>Total</span><span id="sumTotal">Rp0</span></div>
+    <button class="checkout-btn" id="checkoutOpenBtn" disabled>Checkout</button>
+  </div>
+</aside>
+
+<div class="modal" id="checkoutModal">
+  <div class="modal-card">
+    <h3>Selesaikan Pesanan</h3>
+    <p class="sub">Isi data berikut, pesananmu langsung masuk ke dapur.</p>
+    <form id="checkoutForm">
+      <div class="field">
+        <label for="custName">Nama Pemesan</label>
+        <input type="text" id="custName" required placeholder="Nama kamu">
+      </div>
+      <div class="field">
+        <label for="custPhone">Nomor WhatsApp</label>
+        <input type="tel" id="custPhone" required placeholder="08xxxxxxxxxx">
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="orderType">Tipe Pesanan</label>
+          <select id="orderType">
+            <option value="Dine In">Makan di Tempat</option>
+            <option value="Take Away">Bawa Pulang</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="tableNo">No. Meja (opsional)</label>
+          <input type="text" id="tableNo" placeholder="Contoh: 7">
+        </div>
+      </div>
+      <div class="field">
+        <label for="orderNote">Catatan untuk dapur (opsional)</label>
+        <textarea id="orderNote" rows="2" placeholder="Contoh: less sugar, tanpa bawang"></textarea>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn-ghost" id="checkoutCancelBtn">Batal</button>
+        <button type="submit" class="btn-primary">Konfirmasi Pesanan</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="successModal">
+  <div class="modal-card">
+    <div class="success-icon">✓</div>
+    <h3>Pesanan Diterima</h3>
+    <p class="sub">Nomor pesanan kamu:</p>
+    <div class="order-id" id="orderIdOut">MASH-0000</div>
+    <div class="receipt" id="receiptOut"></div>
+    <a class="wa-btn" id="waBtn" href="#" target="_blank" rel="noopener">Kirim Pesanan ke WhatsApp Kasir</a>
+    <div class="modal-actions" style="margin-top:10px;">
+      <button type="button" class="btn-ghost" style="width:100%;" id="successCloseBtn">Pesan Lagi</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
